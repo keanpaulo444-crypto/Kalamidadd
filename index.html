@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kalamidad – Calamities In Philippines</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=EB+Garamond:wght@400;600;700&family=Instrument+Sans:wdth,wght@75..100,400..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Hero: desktop 1280x600 · tablet 768x779 (incl. header) · mobile 599 -->
+  <div class="page-top">
+
+    <!-- Logo + nav are absolutely placed. Desktop: nav only. Tablet/mobile: logo + nav. -->
+    <p class="logo">Calamities In Philippines</p>
+    <!-- keep the nav on ONE line: spaces between the links are real (white-space: pre) -->
+    <nav class="nav" aria-label="Main"><a href="#pictures">More</a><span class="sp sp--d">        </span><span class="sp sp--m">       </span><a href="#timeline">Explore</a><span class="sp sp--d2">         </span><span class="sp sp--m">       </span><a href="#presidents">About Us</a></nav>
+
+    <header class="header"></header>
+
+    <div class="top">
+      <div class="hero__text">
+        <h1>Kalamidad</h1>
+        <p class="hero__gap" aria-hidden="true">&#8203;</p>
+        <p class="hero__lead">-In the design I will be showing different calamities that occurred in the history of the Philippines. In this design I will be showing the natural disasters such as typhoons, floods, and, volcanic eruptions and other catastrophes. It will show the year they occurred and other important information.</p>
+        <a class="cta" href="#pictures">Learn More</a>
+      </div>
+    </div>
+
+    <div class="collage">
+      <img class="collage__img collage__img--pina" src="images/pinatubo.png" alt="Pinatubo eruption ash cloud" />
+      <img class="collage__img collage__img--flood" src="images/hero-flood.png" alt="Flooded church" />
+      <img class="collage__img collage__img--house" src="images/hero-collapsed-house.png" alt="House collapsing into a flooded river" />
+    </div>
+  </div>
+
+  <main class="main">
+    <section class="section pictures" id="pictures">
+      <h2 class="pictures__title">Pictures Captured During Calamities</h2>
+      <div class="photo-grid">
+        <article class="photo-card">
+          <img src="images/great-luzon-flood.png" alt="Great Luzon Flood" />
+          <div class="photo-card__text"><h3>Great Luzon Flood</h3><p>July to August 1972</p></div>
+        </article>
+        <article class="photo-card">
+          <img src="images/pinatubo.png" alt="Pinatubo eruption" />
+          <div class="photo-card__text"><h3>Pinatubo<span class="t-small"> Eruption</span></h3><p>June 15, 1991</p></div>
+        </article>
+        <article class="photo-card">
+          <img src="images/tropical-storm-thelma.png" alt="Tropical Storm Thelma" />
+          <div class="photo-card__text"><h3>Tropical Storm Thelma (Uring)</h3><p>November 15, 1991</p></div>
+        </article>
+        <article class="photo-card">
+          <img src="images/porac-earthquake.png" alt="Earthquake damage in Porac" />
+          <div class="photo-card__text"><h3>Earthquake In Porac</h3><p>April 22, 2019</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section timeline" id="timeline">
+      <div class="timeline__head">
+        <p class="eyebrow">Timeline</p>
+        <h2 class="timeline__title">Calamities Time <span class="t-mobile">To</span><span class="t-nonmobile">to</span> Time</h2>
+      </div>
+      <div class="timeline-row">
+        <article class="tl-card">
+          <p class="tl-card__years">1972-1991</p>
+          <h3>Floods And Eruptions</h3>
+          <p class="tl-card__desc">1972-1991 caused a devastating 6,334 deaths in total because of these calamities<span class="t-small">.</span></p>
+        </article>
+        <div class="arrow" aria-hidden="true">→</div>
+        <article class="tl-card tl-card--2">
+          <p class="tl-card__years">2019-Current</p>
+          <h3>Earthquakes and Habagat</h3>
+          <p class="tl-card__desc">Earthquakes and habagat made the life of the kapampangan hard and challenged<span class="t-small">.</span></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section presidents" id="presidents">
+      <h2 class="presidents__title">President<span class="t-small">s</span> That Time</h2>
+      <div class="president-row">
+        <article class="president-card">
+          <p class="president-card__label">President</p>
+          <p class="president-card__name president-card__name--1">Ferdinand E. Marcos</p>
+          <p class="president-card__term">Term: 1965–1986</p>
+        </article>
+        <article class="president-card">
+          <p class="president-card__label">President</p>
+          <p class="president-card__name president-card__name--2">Corazon C. Aquino</p>
+          <p class="president-card__term">Term: 1986–1992</p>
+        </article>
+        <article class="president-card">
+          <p class="president-card__label">President</p>
+          <p class="president-card__name president-card__name--3">Rodrigo Duterte</p>
+          <p class="president-card__term"><span class="t-desktop">Term:June 30, 2016 – June 30, 2022</span><span class="t-small">Term: 2016–2022</span></p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__content">
+      <label for="phone">Contact Us:</label>
+      <div class="phone-box">
+        <input id="phone" class="phone--default" type="tel" name="phone" placeholder="Enter Your Phone Number" autocomplete="tel" />
+        <input id="phone-m" class="phone--mobile" type="tel" name="phone" placeholder="Your Phone Number:" autocomplete="tel" aria-label="Your phone number" />
+      </div>
+    </div>
+    <div class="footer__sub"></div>
+  </footer>
+
+</body>
+</html>
