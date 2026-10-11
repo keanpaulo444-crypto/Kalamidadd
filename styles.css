@@ -1,19 +1,8 @@
-/*
-  ============================================================
-  Kalamidad – built from the Figma file (three frames)
-  ------------------------------------------------------------
-  DESKTOP  1280px wide  (frame "desktop-view", 1280 x 2238)   -> 1024px and up
-  TABLET    768px wide  (frame "tablet-view",   768 x 2516)   -> 600px to 1023px
-  MOBILE    599px wide  (frame "MOBILE VIEW",   599 x 1721)   -> 599px and down
 
-  Every size below comes from the Figma layers (positions, paddings, gaps, font sizes).
-  Borders are drawn with inset box-shadows so they do not change box sizes (same as Figma).
-  ============================================================
-*/
 
 :root {
-  --gray: #5a5a5a;          /* desktop page background */
-  --gray-tablet: #545454;   /* tablet page background */
+  --gray: #5a5a5a;          
+  --gray-tablet: #545454;   
   --maroon: #3a0415;
   --cream: #f4ece1;
   --cream-2: #ece4d9;
@@ -28,11 +17,10 @@
   --garamond: "EB Garamond", serif;
   --sans: "Instrument Sans", sans-serif;
 
-  /* side padding of full-width sections: 64px, and centred on a 1152px column on wide screens */
+  
   --gutter: max(64px, calc(50% - 576px));
 
-  /* TABLET "Learn More" button: in Figma its border + text are #545454, the SAME colour as the
-     page, so it is invisible. Change these two to make it visible. */
+  
   --cta-color: #545454;
 }
 
@@ -50,17 +38,13 @@ p, h1, h2, h3 { font-weight: 400; }
 
 .t-small, .t-mobile { display: none; }
 
-/* =====================================================================
-   DESKTOP  (1280 frame)
-   ===================================================================== */
 
-/* ---- Hero: 1280 x 600 -------------------------------------------- */
 .page-top { position: relative; max-width: 1280px; margin: 0 auto; height: 600px; }
 .header, .logo { display: none; }
 
 .nav {
   position: absolute; z-index: 3;
-  top: 43px; right: 6.797%;            /* x 969 + width 224 -> ends 87px from the right edge */
+  top: 43px; right: 6.797%;            
   white-space: pre;
   font: 500 14px/normal var(--sans);
   font-variation-settings: "wdth" 100;
@@ -69,10 +53,10 @@ p, h1, h2, h3 { font-weight: 400; }
 }
 .sp--m { display: none; }
 
-.top { padding: 24px 0 0 5%; }                 /* x 64, y 24 */
+.top { padding: 24px 0 0 5%; }                 
 .hero__text { width: 34.7%; max-width: 422px; }
 .hero__text h1 { font: 400 50px/normal var(--eagle); color: #fff; }
-.hero__gap { font: 700 50px/normal var(--garamond); }   /* the empty 50px line between title and text */
+.hero__gap { font: 700 50px/normal var(--garamond); }   
 .hero__lead { font: 400 20px/normal var(--eagle); color: #fff; }
 .cta { display: none; }
 
@@ -82,11 +66,11 @@ p, h1, h2, h3 { font-weight: 400; }
 .collage__img--flood { left: 38.75%; top: 280px; width: 35.156%; height: 253px; }   /* 496 / 280 / 450 x 253 */
 .collage__img--house { left: 75.156%; top: 81px;  width: 19.844%; height: 452px; }  /* 962 / 81  / 254 x 452 */
 
-/* ---- Sections ------------------------------------------------------ */
+
 .main { display: block; }
 .section { padding-inline: var(--gutter); }
 
-/* Pictures: 1280 x 581 */
+
 .pictures { background: var(--maroon); padding-block: 64px; display: flex; flex-direction: column; gap: 32px; }
 .pictures__title { width: 500px; max-width: 100%; font: 400 40px/normal var(--eagle); color: #fff; }
 .photo-grid { display: flex; gap: 24px; }
@@ -102,7 +86,7 @@ p, h1, h2, h3 { font-weight: 400; }
 .photo-card h3 { font: 400 18px/normal var(--garamond); color: var(--ink); }
 .photo-card p { font: 400 13px/normal var(--sans); color: var(--muted); }
 
-/* Timeline: 1280 x 466 */
+
 .timeline { padding-block: 80px; display: flex; flex-direction: column; gap: 48px; }
 .timeline__head { display: flex; flex-direction: column; gap: 8px; }
 .eyebrow { font: 400 12px/normal var(--eagle); letter-spacing: 1px; text-transform: uppercase; color: #fff; }
@@ -126,7 +110,7 @@ p, h1, h2, h3 { font-weight: 400; }
   font: 700 14px/normal var(--sans);
 }
 
-/* Presidents: 1280 x 365 */
+
 .presidents { background: var(--maroon); padding-block: 64px; display: flex; flex-direction: column; gap: 32px; }
 .presidents__title { font: 400 40px/normal var(--eagle); color: #fff; }
 .president-row { display: flex; gap: 16px; align-items: flex-start; }
@@ -142,7 +126,7 @@ p, h1, h2, h3 { font-weight: 400; }
 .president-card__name--3 { font: 600 13px/normal var(--sans); font-variation-settings: "wdth" 100; color: var(--rust); }
 .president-card__term { font: 400 13px/normal var(--sans); color: var(--muted); }
 
-/* Footer: 1280 x 160 */
+
 .footer { background: var(--footer); height: 160px; padding: 80px var(--gutter) 0; }
 .footer__content { display: flex; flex-direction: column; gap: 12px; }
 .footer label { font: 400 14px/normal var(--eagle); color: #fff; }
@@ -159,9 +143,7 @@ p, h1, h2, h3 { font-weight: 400; }
 .footer__sub { display: none; }
 
 
-/* =====================================================================
-   TABLET  (768 frame)
-   ===================================================================== */
+
 @media (max-width: 1023px) {
   body { background: var(--gray-tablet); }
   .t-desktop { display: none; }
@@ -170,7 +152,7 @@ p, h1, h2, h3 { font-weight: 400; }
 
   .page-top { max-width: none; height: auto; padding-bottom: 48px; }
 
-  /* Header 768 x 71 */
+ 
   .header { display: block; height: 71px; border-bottom: 1px solid var(--gray); }
   .logo {
     display: block; position: absolute; z-index: 3; left: 40px; top: 16px;
@@ -178,7 +160,7 @@ p, h1, h2, h3 { font-weight: 400; }
   }
   .nav { top: 27px; right: 40px; }
 
-  /* Hero */
+
   .top { padding: 48px 40px 0; }
   .hero__text { width: auto; max-width: none; display: flex; flex-direction: column; gap: 16px; }
   .hero__gap { display: none; }
@@ -196,7 +178,7 @@ p, h1, h2, h3 { font-weight: 400; }
 
   .section { padding-inline: 40px; }
 
-  /* Pictures 768 x 772 */
+  
   .pictures { padding-block: 56px; }
   .pictures__title { width: auto; font-size: 36px; }
   .photo-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; align-items: start; }
@@ -204,7 +186,7 @@ p, h1, h2, h3 { font-weight: 400; }
   .photo-card img { height: 160px; }
   .photo-card h3 { font-weight: 700; }
 
-  /* Timeline 768 x 403 */
+  
   .timeline { background: var(--maroon); padding-block: 56px; gap: 32px; }
   .eyebrow { font: 700 12px/normal var(--sans); font-variation-settings: "wdth" 100; opacity: .7; }
   .timeline__title { font-size: 36px; }
@@ -215,7 +197,7 @@ p, h1, h2, h3 { font-weight: 400; }
   .tl-card--2 .tl-card__desc { color: var(--muted); opacity: 1; }
   .arrow { color: var(--gray-tablet); }
 
-  /* Presidents 768 x 322 */
+  
   .presidents { padding-block: 56px; }
   .presidents__title { font-size: 36px; }
   .president-row { gap: 12px; }
@@ -225,7 +207,7 @@ p, h1, h2, h3 { font-weight: 400; }
   .president-card__name--2,
   .president-card__name--3 { font: 700 20px/normal var(--garamond); color: var(--rust); }
 
-  /* Footer 768 x 240 */
+  
   .footer { height: auto; padding: 48px 40px; display: flex; flex-direction: column; gap: 32px; }
   .footer__content { gap: 16px; }
   .footer label { font: 600 14px/normal var(--sans); font-variation-settings: "wdth" 100; }
@@ -234,9 +216,7 @@ p, h1, h2, h3 { font-weight: 400; }
 }
 
 
-/* =====================================================================
-   MOBILE  (599 frame: 20px page margin, 559px content)
-   ===================================================================== */
+
 @media (max-width: 599px) {
   body { background: var(--maroon); }
   .t-mobile { display: inline; }
@@ -245,8 +225,7 @@ p, h1, h2, h3 { font-weight: 400; }
   .page-top { padding-bottom: 0; }
   .main { display: flex; flex-direction: column; }
 
-  /* Hero box: 559 x 294, #3a0415, 1px black border, 20px from the edges.
-     "Calamities In Philippines" + nav sit inside it at the top. */
+ 
   .header {
     margin: 20px 20px 0; height: 95px;
     background: var(--maroon); border: 1px solid #000; border-bottom: 0;
@@ -265,7 +244,7 @@ p, h1, h2, h3 { font-weight: 400; }
   .hero__text h1 { font: 400 23px/1.1 var(--garamond); margin: 0 0 7px 23px; }
   .hero__lead { font: 400 20px/normal var(--garamond); padding: 0 4px 0 16px; }
 
-  /* Collage: Pinatubo 284 x 371 on top, flood church 354 x 217 behind it, overlapping the hero by 9px */
+  
   .collage {
     position: relative; z-index: 2; display: block; height: auto;
     margin: -9px 20px 0; aspect-ratio: 559 / 371;
@@ -277,22 +256,22 @@ p, h1, h2, h3 { font-weight: 400; }
 
   .section { padding-inline: 40px; }
 
-  /* Timeline: header 24px title, cards 222 + arrow + 189 */
+  
   .timeline { order: 1; margin-top: -15px; padding-block: 56px; padding-inline: clamp(20px, calc((100% - 483px) / 2), 58px); }
   .timeline__title { font-size: 24px; }
   .timeline-row { align-items: stretch; }
-  .tl-card:first-child { flex: 0 1 222px; }   /* card 222 + arrow 40 + card 189, gaps 16 */
+  .tl-card:first-child { flex: 0 1 222px; }   
   .tl-card--2 { flex: 1 1 0; }
   .arrow { align-self: center; color: #fff; font: 400 22px/normal var(--garamond); }
 
-  /* Parts of the page the mobile frame does not draw: reuse the tablet styles, stacked */
+  
   .pictures { order: 2; padding-block: 40px; }
   .pictures__title { font-size: 28px; }
   .presidents { order: 3; background: var(--gray-tablet); padding-block: 40px; }
   .presidents__title { font-size: 28px; }
   .president-row { flex-direction: column; align-items: stretch; }
 
-  /* Footer: black, 563 x 202; white box 425 x 65 at left 45 / top 55 */
+  
   .footer { order: 4; background: #000; height: auto; min-height: 202px; padding: 55px 45px 82px; display: block; }
   .footer__content { background: #fff; height: 65px; max-width: 425px; gap: 0; }
   .footer label { margin-top: -7px; font: 400 24px/normal var(--eagle); color: #000; }
@@ -305,7 +284,7 @@ p, h1, h2, h3 { font-weight: 400; }
   .footer__sub { display: none; }
 }
 
-/* small phones: stack the two timeline cards */
+
 @media (max-width: 520px) {
   .timeline-row { flex-direction: column; align-items: stretch; }
   .tl-card:first-child, .tl-card--2 { flex: none; }
