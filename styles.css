@@ -1,4 +1,4 @@
-/* comment */
+/* Fabian Kean Paulo P. */
 
 :root {
   --gray: #5a5a5a;          
@@ -101,14 +101,14 @@ p, h1, h2, h3 { font-weight: 400; }
   top: 280px;
   width: 35.156%;
   height: 253px;
-}   /* 496 / 280 / 450 x 253 */
+}   
 
 .collage__img--house {
   left: 75.156%;
   top: 81px;
   width: 19.844%;
   height: 452px;
-}  /* 962 / 81  / 254 x 452 */
+}  
 
 
 .main {
@@ -689,7 +689,7 @@ p, h1, h2, h3 { font-weight: 400; }
 
   .cta {
     display: none;
-  }   /* the mobile frame has no "Learn More" button */
+  }   
 
   .hero__text h1 {
     font: 400 23px/1.1 var(--garamond);
