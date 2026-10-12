@@ -403,20 +403,19 @@ p, h1, h2, h3 { font-weight: 400; }
   }
 
   .logo {
-    display: block;
-    position: absolute;
-    z-index: 3;
-    left: 40px;
-    top: 16px;
-    font: 400 24px/normal var(--eagle);
-    letter-spacing: -1px;
-    color: var(--ink);
-    white-space: nowrap;
+    left: 38px;
+    top: 34px;
+    font-size: 23px;
+    letter-spacing: 0;
+    color: #fff;
   }
 
   .nav {
-    top: 27px;
-    right: 40px;
+    top: 76px;
+    left: 38px;
+    right: auto;
+    color: #fff;
+    text-transform: none;
   }
 
 
